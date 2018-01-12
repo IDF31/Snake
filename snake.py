@@ -16,7 +16,7 @@ tail = []
 head = Rect(x,y,10,10)
 fx = random.randrange(10,580,10)
 fy = random.randrange(10,780,10)
-food = Rect(fx,fx,10,10)
+food = Rect(fx,fy,10,10)
 window = pygame.display.set_mode((680,480))
 
 #game loop 
