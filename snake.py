@@ -14,8 +14,8 @@ left = 0
 length = 3
 tail = []
 head = Rect(x,y,10,10)
-fx = random.randrange(10,580,10)
-fy = random.randrange(10,780,10)
+fx = random.randrange(10,480,10)
+fy = random.randrange(10,680,10)
 food = Rect(fx,fy,10,10)
 window = pygame.display.set_mode((680,480))
 
@@ -56,9 +56,9 @@ while running:
     if head.colliderect(food):
         length+=1
         speed+=1
-        fx = random.randrange(10,580,10)
-        fy = random.randrange(10,780,10)
-        food = Rect(fx,fx,10,10)
+        fx = random.randrange(10,480,10)
+        fy = random.randrange(10,680,10)
+        food = Rect(fx,fy,10,10)
     if head.collidelist(tail) > -1:
         print("You lost!")
         running = False
